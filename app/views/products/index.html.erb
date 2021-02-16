@@ -20,6 +20,8 @@
                 <h1><%= product.nama %></h1>
                 <p>
                     <%= truncate(strip_tags(product.deskripsi),length: 80) %>
+                    <br>
+                    last updated at <%= product.updated_at.localtime %>
                 </p>
             </td>
             <td class="actions">

@@ -23,7 +23,7 @@ header.main {
   text-align: center;
   @media (min-width: 30em) {
     text-align: left;
-    background: #282;
+    background: rgb(104, 161, 104);
     margin: 0;
     h1 {
       display: none;
@@ -46,7 +46,7 @@ header.main {
 
 nav {
   padding-bottom: 1em;
-  background: #141;
+  background: rgb(151, 223, 151);
   text-align: center;
   @media (min-width: 30em) {
     text-align: left;
@@ -64,6 +64,7 @@ nav {
       padding: 0.5em;
       text-transform: uppercase;
       letter-spacing: 0.354em;
+      color: black;
       a {
         color: #bfb;
         text-decoration: none;
@@ -78,4 +79,16 @@ nav {
 
 main {
   padding: 0.5em;
+}
+
+.notice,
+#notice {
+  background: #ffb;
+  border-radius: 0.5em;
+  border: solid 0.177em #882;
+  color: #882;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 1em 1.414em;
+  text-align: center;
 }
