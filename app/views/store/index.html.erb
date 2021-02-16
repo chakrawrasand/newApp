@@ -1,0 +1,18 @@
+<% if notice %>
+<aside id="notice"><%= notice %></aside>
+<% end %>
+<h1>Catalog Ajah</h1>
+<ul class="catalog">
+    <% @products.each do |product| %>
+    <li>
+        <%= image_tag(product.gambar) %>
+        <h2><%= product.nama %></h2>
+        <p>
+            <%= sanitize(product.deskripsi) %>
+        </p>
+        <div class="price">
+            <%= product.harga %>
+        </div>
+    </li>
+    <% end %>
+</ul>
